@@ -4,7 +4,7 @@
 
 This repository contains multiple submodules and external Git repositories embedded within this project. These submodules allow us to independently maintain dependencies or shared codebases while integrating them seamlessly into the main project.
 
-Each submodule has its version control, and changes within a submodule must be handled separately.
+Each submodule has its own version control, and changes within a submodule must be handled separately.
 
 ---
 
@@ -144,3 +144,4 @@ git submodule foreach 'git checkout <branch_name>'
 ```
 
 ---
+
