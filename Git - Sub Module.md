@@ -1,15 +1,11 @@
 # GitHub repository with Submodule
 
 ## Introduction
-
 This repository contains multiple submodules and external Git repositories embedded within this project. These submodules allow us to independently maintain dependencies or shared codebases while integrating them seamlessly into the main project.
 
-Each submodule has its own version control, and changes within a submodule must be handled separately.
+> Each submodule has its own version control, and changes within a submodule must be handled separately.
 
----
-
-## Adding New Submodules
-
+### Adding submodules
 To add a new submodule to the repository, follow these steps:
 
 1. Add the submodule using the following command:
@@ -36,7 +32,9 @@ To add a new submodule to the repository, follow these steps:
    git push origin main
    ```
 
-### Removing Submodules
+---
+
+### Removing submodules
 
 To remove a submodule, follow these steps:
 
@@ -64,40 +62,8 @@ To remove a submodule, follow these steps:
    ```
 
 ---
-
-## Pushing Changes
-
-If you make changes to a submodule, you must commit those changes within the submodule and push them to its repository.
-
-1. Navigate to the submodule's directory:
-
-   ```bash
-   cd <path_to_submodule>
-   ```
-
-2. Stage, commit, and push your changes:
-
-   ```bash
-   git add .
-   git commit -m "Updated submodule"
-   git push origin main
-   ```
-
-3. After committing and pushing the changes to the submodule, return to the main repository:
-
-   ```bash
-   cd ..
-   ```
-
-4. Stage and commit the submodule's updated state in the main repository:
-
-   ```bash
-   git add <path_to_submodule>
-   git commit -m "Updated submodule pointer"
-   git push origin main
-   ```
    
-## Cloning the Repository
+### Cloning repository with submodules
 
 When cloning a repository with submodules, you must use the `--recurse-submodules` flag to ensure all submodules are initialized and cloned automatically.
 
@@ -124,8 +90,6 @@ This will initialize and fetch all submodules as defined in the `.gitmodules` fi
 
 ---
 
-## Working with Submodules
-
 ### Updating Submodules
 
 To ensure your submodules are up-to-date, use the following command:
@@ -138,10 +102,11 @@ This will update the submodules to the latest commit on the specified branch.
 
 ---
 
-## Checkout using foreach
+### Checkout using foreach
 ```
 git submodule foreach 'git checkout <branch_name>'
 ```
 
 ---
+
 
