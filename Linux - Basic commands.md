@@ -1,5 +1,7 @@
 # Ubuntu Commands
 
+`hostnamectl`: provides a quick summary of the operating system
+
 ## SSH Commands
 - `ssh -T git@github.com`: Test handshake
 
